@@ -9,7 +9,9 @@ class Paragraph{
         return text;
     }
 
-
+    public String toString() {
+        return text;
+    }
 
     public void print(){
         getText();

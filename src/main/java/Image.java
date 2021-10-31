@@ -6,7 +6,7 @@ public class Image{
         this.imageName = imageName;
     }
 
-    public String getImageName() {
+    public String toString() {
         return imageName;
     }
 

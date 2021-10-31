@@ -6,7 +6,7 @@ public class Table{
         this.title = title;
     }
 
-    public String getTitle() {
+    public String toString() {
         return title;
     }
 
