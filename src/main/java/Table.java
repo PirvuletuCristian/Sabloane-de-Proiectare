@@ -1,27 +1,17 @@
-public class Table extends Element{
+public class Table{
     private String title;
 
 
-
-    public Table(SubChapter subChapter, String title) {
-        super(subChapter);
+    public Table(String title) {
         this.title = title;
     }
-
 
     public String getTitle() {
         return title;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
-    }
+    public void print(){
 
-    @Override
-    public String toString() {
-        return "Table{" +
-                "title='" + title + '\'' +
-                '}';
     }
 
 }

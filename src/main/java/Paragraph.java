@@ -1,8 +1,7 @@
-class Paragraph extends Element{
+class Paragraph{
     private String text;
 
-    public Paragraph(SubChapter subChapter, String text) {
-        super(subChapter);
+    public Paragraph( String text) {
         this.text = text;
     }
 
@@ -10,14 +9,9 @@ class Paragraph extends Element{
         return text;
     }
 
-    public void setText(String text) {
-        this.text = text;
-    }
 
-    @Override
-    public String toString() {
-        return "Paragraph{" +
-                "text='" + text + '\'' +
-                '}';
+
+    public void print(){
+        getText();
     }
 }
