@@ -19,6 +19,10 @@ public class Book {
         authors.add(author);
     }
 
+    public String getTitle() {
+        return title;
+    }
+
     public int createChapter(String chapter) {
         Chapter chapterObj = new Chapter(chapter);
         chapters.add(chapterObj);
@@ -30,7 +34,7 @@ public class Book {
     }
 
     public void print(){
-
+        System.out.println("Book: " + getTitle());
     }
 }
 

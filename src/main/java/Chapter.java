@@ -10,6 +10,10 @@ class Chapter{
         this.name = name;
     }
 
+    public String getName() {
+        return name;
+    }
+
     public int createSubChapter(String string) {
         SubChapter subChapterObj = new SubChapter(string);
         subChapters.add(subChapterObj);
@@ -21,6 +25,6 @@ class Chapter{
     }
 
     public void print(){
-
+        System.out.println("Chapter: " + getName());
     }
 }

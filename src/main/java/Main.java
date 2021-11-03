@@ -18,6 +18,5 @@ public class Main {
         scOneOne.createNewParagraph("Paragraph 5");
 
         scOneOne.print();
-
     }
 }

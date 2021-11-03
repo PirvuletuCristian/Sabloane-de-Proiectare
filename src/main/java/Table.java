@@ -1,4 +1,4 @@
-public class Table{
+public class Table implements Element{
     private String title;
 
 
@@ -6,12 +6,16 @@ public class Table{
         this.title = title;
     }
 
+    public String getTitle() {
+        return title;
+    }
+
     public String toString() {
         return title;
     }
 
-    public void print(){
-
+    @Override
+    public void print() {
+        System.out.println("Table:" + getTitle());
     }
-
 }

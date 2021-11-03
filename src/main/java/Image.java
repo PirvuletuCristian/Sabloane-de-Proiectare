@@ -1,4 +1,4 @@
-public class Image{
+public class Image implements Element{
 
     private String imageName;
 
@@ -6,11 +6,16 @@ public class Image{
         this.imageName = imageName;
     }
 
+    public String getImageName() {
+        return imageName;
+    }
+
     public String toString() {
         return imageName;
     }
 
-    public void print(){
-
+    @Override
+    public void print() {
+        System.out.println("Image: " + getImageName());
     }
 }

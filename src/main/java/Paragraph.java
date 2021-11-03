@@ -1,4 +1,4 @@
-class Paragraph{
+class Paragraph implements Element{
     private String text;
 
     public Paragraph( String text) {
@@ -14,6 +14,6 @@ class Paragraph{
     }
 
     public void print(){
-        getText();
+        System.out.println("Paragraph: " +getText());
     }
 }

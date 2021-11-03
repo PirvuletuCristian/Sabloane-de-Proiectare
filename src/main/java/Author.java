@@ -6,7 +6,11 @@ public class Author {
         this.name = name;
     }
 
-    public void print(){
+    public String getName() {
+        return name;
+    }
 
+    public void print(){
+        System.out.println("Author: " + getName());
     }
 }
