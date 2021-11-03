@@ -4,11 +4,7 @@ import java.util.List;
 class SubChapter {
     private String Name;
 
-    private List<Paragraph> paragraphs = new ArrayList<>();
-
-    private List<Image> images = new ArrayList<>();
-
-    private List<Table> tables = new ArrayList<>();
+    private List<Element> elements = new ArrayList<>();
 
     public SubChapter(String name) {
         Name = name;
@@ -20,22 +16,26 @@ class SubChapter {
 
     public void createNewParagraph(String newParagraph) {
         Paragraph paragraph = new Paragraph(newParagraph);
-        paragraphs.add(paragraph);
+        elements.add(paragraph);
     }
     public void createNewImage(String newImage) {
         Image image = new Image(newImage);
-        images.add(image);
+        elements.add(image);
     }
 
     public void createNewTable(String newTable) {
         Table table = new Table(newTable);
-        tables.add(table);
+        elements.add(table);
+    }
+
+    public String toString(){
+        return "Subchaper: " + Name;
     }
 
     public void print() {
         System.out.println("Subchapter: " + getName());
-        paragraphs.stream().forEach(e -> System.out.println("Paragraph: " + e));
-        images.stream().forEach(i -> System.out.println("Image with name: " + i));
-        tables.stream().forEach(t -> System.out.println("Table with Title: " + t));
+        for (Element element : elements) {
+            System.out.println(element);
+        }
     }
 }

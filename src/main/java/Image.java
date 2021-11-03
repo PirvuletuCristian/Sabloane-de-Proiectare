@@ -11,11 +11,11 @@ public class Image implements Element{
     }
 
     public String toString() {
-        return imageName;
+        return "Image: " + imageName;
     }
 
     @Override
     public void print() {
-        System.out.println("Image: " + getImageName());
+        System.out.println("Image with name: " + getImageName());
     }
 }

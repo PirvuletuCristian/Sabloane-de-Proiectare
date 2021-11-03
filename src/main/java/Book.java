@@ -35,6 +35,12 @@ public class Book {
 
     public void print(){
         System.out.println("Book: " + getTitle());
+        for (Author author : authors) {
+            System.out.println(author);
+        }
+        for (Chapter chapter : chapters) {
+            System.out.println(chapter);
+        }
     }
 }
 

@@ -10,9 +10,10 @@ class Paragraph implements Element{
     }
 
     public String toString() {
-        return text;
+        return  "Paragraph: " + text;
     }
 
+    @Override
     public void print(){
         System.out.println("Paragraph: " +getText());
     }

@@ -24,7 +24,14 @@ class Chapter{
         return  subChapters.get(subChapter);
     }
 
+    public String toString() {
+        return "Chapter: " + name;
+    }
+
     public void print(){
         System.out.println("Chapter: " + getName());
+        for(SubChapter subChapter : subChapters){
+            System.out.println(subChapter);
+        }
     }
 }

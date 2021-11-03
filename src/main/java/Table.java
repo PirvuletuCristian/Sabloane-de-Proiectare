@@ -11,7 +11,7 @@ public class Table implements Element{
     }
 
     public String toString() {
-        return title;
+        return "Table with title: " + title;
     }
 
     @Override

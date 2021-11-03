@@ -10,6 +10,11 @@ public class Author {
         return name;
     }
 
+    @Override
+    public String toString() {
+        return "Author: " + name;
+    }
+
     public void print(){
         System.out.println("Author: " + getName());
     }
