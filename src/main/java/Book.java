@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Book {
+public class Book extends Section{
 
     private String title;
 
@@ -12,6 +12,7 @@ public class Book {
     private List<Author> authors = new ArrayList<>();
 
     public Book(String title) {
+        super();
         this.title = title;
     }
 
@@ -33,14 +34,19 @@ public class Book {
         return chapters.get(chapter);
     }
 
+
     public void print(){
         System.out.println("Book: " + getTitle());
+
+        System.out.println("\n" +"Authors: ");
         for (Author author : authors) {
             System.out.println(author);
         }
-        for (Chapter chapter : chapters) {
-            System.out.println(chapter);
-        }
+        System.out.println();
+//        for (Chapter chapter : chapters) {
+//            System.out.println(chapter);
+//        }
+        super.print();
     }
 }
 

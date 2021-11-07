@@ -15,6 +15,11 @@ public class Table implements Element{
     }
 
     @Override
+    public void add(Element table) {
+
+    }
+
+    @Override
     public void print() {
         System.out.println("Table:" + getTitle());
     }

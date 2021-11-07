@@ -11,7 +11,12 @@ public class Image implements Element{
     }
 
     public String toString() {
-        return "Image: " + imageName;
+        return "Image with name: " + imageName;
+    }
+
+    @Override
+    public void add(Element imageName) {
+
     }
 
     @Override

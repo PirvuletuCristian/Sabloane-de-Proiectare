@@ -14,6 +14,11 @@ class Paragraph implements Element{
     }
 
     @Override
+    public void add(Element text) {
+
+    }
+
+    @Override
     public void print(){
         System.out.println("Paragraph: " +getText());
     }
