@@ -1,11 +1,12 @@
-public class TableOfContents {
-    private Book book;
+public class TableOfContents implements Element{
 
-    public TableOfContents(Book book) {
-        this.book = book;
+    @Override
+    public void add(Element element) {
+
     }
 
-    public void print(){
+    @Override
+    public void print() {
 
     }
 }
