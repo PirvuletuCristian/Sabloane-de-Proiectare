@@ -7,14 +7,13 @@ public class Section implements Element{
 
     private List<Element> elements = new ArrayList<>();
 
-    public Section() {
-
-    }
-
     public Section(String title) {
         this.title = title;
     }
 
+    public String getTitle() {
+        return title;
+    }
 
     @Override
     public void add(Element element) {
@@ -33,7 +32,7 @@ public class Section implements Element{
     @Override
     public void print() {
         for(Element element : elements){
-            System.out.println(element);
+            element.print();
         }
     }
 
