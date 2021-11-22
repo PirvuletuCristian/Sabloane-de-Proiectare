@@ -1,7 +1,9 @@
-class Paragraph implements Element{
+class Paragraph implements Element {
     private String text;
 
-    public Paragraph( String text) {
+    private AlignStrategy alignStrategy;
+
+    public Paragraph(String text) {
         this.text = text;
     }
 
@@ -10,7 +12,11 @@ class Paragraph implements Element{
     }
 
     public String toString() {
-        return  "Paragraph: " + text;
+        return "Paragraph: " + text;
+    }
+
+    public void setAlignStrategy(AlignStrategy alignStrategy) {
+        this.alignStrategy = alignStrategy;
     }
 
     @Override
@@ -19,7 +25,16 @@ class Paragraph implements Element{
     }
 
     @Override
-    public void print(){
-        System.out.println("Paragraph: " +getText());
+    public void print() {
+        if (this.alignStrategy != null) {
+            this.alignStrategy.render(this.text);
+        }
+        else
+            System.out.println(this.text);
     }
+
+
+
+
+
 }
