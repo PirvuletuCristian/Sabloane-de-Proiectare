@@ -1,4 +1,9 @@
 public class Main {
+
+    public static void Printing(){
+        DocumentManager.getInstance().getBook().print();
+    }
+
     public static void main(String[] args) throws Exception {
         Section cap1 = new Section("Capitolul 1");
         Paragraph p1 = new Paragraph("Paragraph 1");
