@@ -13,3 +13,8 @@ all good
 https://github.com/PirvuletuCristian/Sabloane-de-Proiectare/commit/b02c81d7e5f4f4f22e405cf4a91f75cd0db42c8d
 
 all good
+
+# Feedback lab5:
+https://github.com/PirvuletuCristian/Sabloane-de-Proiectare/commit/c167ccba1dfdfa7261ba2a8cbf69355293ef1fe8
+
+all good
