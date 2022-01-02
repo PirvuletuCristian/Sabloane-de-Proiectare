@@ -18,3 +18,9 @@ all good
 https://github.com/PirvuletuCristian/Sabloane-de-Proiectare/commit/c167ccba1dfdfa7261ba2a8cbf69355293ef1fe8
 
 all good
+
+# Feedback lab6:
+
+no content
+
+# Proposed grade: 8.5
